@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EVORA – Event Hub & Caters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+   <div class="nav-logo">
+  <img src="images/logo.png" alt="Evora Event Hub & Caters" class="nav-logo-img" />
+</div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Book Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#services" onclick="closeMobile()">Services</a></li>
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#gallery" onclick="closeMobile()">Gallery</a></li>
+      <li><a href="#team" onclick="closeMobile()">Team</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="pulse-dot"></span>
+        All Kerala Service Available
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">CELEBRATE</span>
+        <span class="title-line title-accent">CREATE</span>
+        <span class="title-line">CHERISH</span>
+      </h1>
+      <p class="hero-sub">
+        Luxury events crafted with passion, precision, and a touch of the extraordinary.<br/>
+        Your dream celebration — reimagined.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">
+          <span>Plan Your Event</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#gallery" class="btn-ghost">See Our Work</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="500">0</span><span>+</span>
+          <span class="stat-label">Events Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="7">0</span>
+          <span class="stat-label">Services Offered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="100">0</span><span>%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- TAGLINE MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Weddings</span><span class="dot">✦</span>
+      <span>Catering</span><span class="dot">✦</span>
+      <span>Décor</span><span class="dot">✦</span>
+      <span>Light & Sound</span><span class="dot">✦</span>
+      <span>Photography</span><span class="dot">✦</span>
+      <span>DJ & Music</span><span class="dot">✦</span>
+      <span>Stage Shows</span><span class="dot">✦</span>
+      <span>Weddings</span><span class="dot">✦</span>
+      <span>Catering</span><span class="dot">✦</span>
+      <span>Décor</span><span class="dot">✦</span>
+      <span>Light & Sound</span><span class="dot">✦</span>
+      <span>Photography</span><span class="dot">✦</span>
+      <span>DJ & Music</span><span class="dot">✦</span>
+      <span>Stage Shows</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">What We Do</span>
+        <h2 class="section-title">Our <span class="gold">Services</span></h2>
+        <p class="section-sub">From concept to celebration — every detail, perfected.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal" style="--delay:0s">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M24 8C16 8 10 16 10 24s6 16 14 16 14-8 14-16S32 8 24 8z"/>
+              <path d="M16 20l4 4 8-8"/>
+              <path d="M8 36l4-4M36 36l4 4M8 12L4 8M40 12l4-4"/>
+            </svg>
+          </div>
+          <h3>Weddings</h3>
+          <p>Grand ceremonies to intimate nikah — we craft every moment with love, elegance, and flawless execution.</p>
+          <div class="card-tag">Most Popular</div>
+        </div>
+
+        <div class="service-card reveal" style="--delay:0.1s">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="24" cy="16" r="8"/>
+              <path d="M8 40c0-8.837 7.163-16 16-16s16 7.163 16 16"/>
+              <path d="M18 30l6 6 6-6"/>
+            </svg>
+          </div>
+          <h3>Catering</h3>
+          <p>Exquisite cuisine that delights every palate — from traditional Kerala feasts to multi-cuisine spreads.</p>
+        </div>
+
+        <div class="service-card reveal" style="--delay:0.2s">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 42l8-8 6 6 8-16 8 4 6-14"/>
+              <circle cx="38" cy="10" r="4"/>
+            </svg>
+          </div>
+          <h3>Décor</h3>
+          <p>Transforming spaces into breathtaking worlds — floral, thematic, minimalist, or maximalist.</p>
+        </div>
+
+        <div class="service-card reveal" style="--delay:0.3s">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="8" y="16" width="32" height="20" rx="2"/>
+              <path d="M16 16v-4a8 8 0 0116 0v4"/>
+              <circle cx="24" cy="26" r="3"/>
+            </svg>
+          </div>
+          <h3>Light & Sound</h3>
+          <p>Professional AV setup, ambient lighting, and crystal-clear audio systems for every venue size.</p>
+        </div>
+
+        <div class="service-card reveal" style="--delay:0.4s">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="10" y="12" width="28" height="22" rx="3"/>
+              <circle cx="24" cy="23" r="5"/>
+              <circle cx="24" cy="23" r="2"/>
+              <path d="M10 38h28"/>
+            </svg>
+          </div>
+          <h3>Photography & Video</h3>
+          <p>Cinematic films and timeless photographs that preserve every precious memory forever.</p>
+        </div>
+
+        <div class="service-card reveal" style="--delay:0.5s">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <ellipse cx="24" cy="32" rx="12" ry="5"/>
+              <path d="M12 32V20M36 32V20"/>
+              <path d="M18 20c0-3.314 2.686-6 6-6s6 2.686 6 6"/>
+              <path d="M14 26c0-5.523 4.477-10 10-10s10 4.477 10 10"/>
+            </svg>
+          </div>
+          <h3>DJ & Music</h3>
+          <p>From classical melodies to high-energy mixes — our DJs set the perfect mood for your celebration.</p>
+        </div>
+
+        <div class="service-card reveal service-card-wide" style="--delay:0.6s">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="6" y="10" width="36" height="28" rx="2"/>
+              <path d="M6 18h36M14 10v8M34 10v8"/>
+              <path d="M20 28l4-4 4 4"/>
+            </svg>
+          </div>
+          <h3>Stage Shows</h3>
+          <p>Spectacular stage productions, cultural performances, and entertainment programs that wow your guests.</p>
+          <div class="card-tag">Premium</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual reveal">
+        <div class="about-orb"></div>
+        <div class="about-card-stack">
+          <div class="about-card ac1">
+            <span class="ac-num">500+</span>
+            <span class="ac-label">Events Hosted</span>
+          </div>
+          <div class="about-card ac2">
+            <span class="ac-icon">✦</span>
+            <span class="ac-label">Pan Kerala Reach</span>
+          </div>
+          <div class="about-card ac3">
+            <span class="ac-num">2</span>
+            <span class="ac-label">Passionate Founders</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-copy reveal">
+        <span class="eyebrow">About Us</span>
+        <h2 class="section-title">Your Trusted <span class="gold">Event Partner</span></h2>
+        <p>EVORA Event Hub & Caters was born from a simple belief — every celebration deserves to be extraordinary. Founded by two friends with a shared passion for creating unforgettable moments, we've grown into one of Kerala's most trusted event management companies.</p>
+        <p>From grand weddings to intimate engagements, we bring your dreams to life with precision, creativity, and heart. Our commitment is to deliver exceptional service, exquisite cuisine, and stunning décor tailored to your unique vision.</p>
+        <div class="vision-mission">
+          <div class="vm-block">
+            <h4>🎯 Our Vision</h4>
+            <p>To create unforgettable celebrations with premium hospitality and trusted service that brings people together.</p>
+          </div>
+          <div class="vm-block">
+            <h4>🚀 Our Mission</h4>
+            <p>Delivering quality catering, luxury event solutions, and memorable experiences with professionalism, passion, and perfection.</p>
+          </div>
+        </div>
+        <a href="#contact" class="btn-primary">
+          <span>Start Planning</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Our Work</span>
+        <h2 class="section-title">Moments We've <span class="gold">Crafted</span></h2>
+        <p class="section-sub">A glimpse into the world of celebrations we've created.</p>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item gi-tall">
+          <div class="gallery-img gi-img-1"></div>
+          <div class="gallery-overlay">
+            <span>Royal Wedding</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img gi-img-2"></div>
+          <div class="gallery-overlay">
+            <span>Stage Décor</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img gi-img-3"></div>
+          <div class="gallery-overlay">
+            <span>Floral Arch</span>
+          </div>
+        </div>
+        <div class="gallery-item gi-wide">
+          <div class="gallery-img gi-img-4"></div>
+          <div class="gallery-overlay">
+            <span>Catering Setup</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img gi-img-5"></div>
+          <div class="gallery-overlay">
+            <span>Intimate Reception</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section team-section" id="team">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">The Founders</span>
+        <h2 class="section-title">Two Visions, <span class="gold">One Dream</span></h2>
+        <p class="section-sub">Founded by two friends who joined hands to create timeless experiences.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal" style="--delay:0s">
+          <div class="team-glow"></div>
+          <div class="team-avatar ta-1">
+            <div class="avatar-ring"></div>
+            <span class="avatar-initials">P</span>
+          </div>
+          <h3>Prajeesh</h3>
+          <span class="team-role">Co-Founder</span>
+          <p>The creative visionary behind every unforgettable celebration Evora has crafted across Kerala.</p>
+          <a href="tel:+919747813273" class="team-contact">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 10.5a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L10.09 15.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            97478 13273
+          </a>
+        </div>
+        <div class="team-card reveal" style="--delay:0.15s">
+          <div class="team-glow"></div>
+          <div class="team-avatar ta-2">
+            <div class="avatar-ring"></div>
+            <span class="avatar-initials">V</span>
+          </div>
+          <h3>Vishnu</h3>
+          <span class="team-role">Co-Founder</span>
+          <p>The operational powerhouse ensuring every event runs with seamless precision from start to finish.</p>
+          <a href="tel:+919809204029" class="team-contact">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 10.5a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L10.09 15.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            98092 04029
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Get In Touch</span>
+        <h2 class="section-title">Let's Plan Your <span class="gold">Perfect Event</span></h2>
+        <p class="section-sub">Reach out and we'll make your dream celebration a reality.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="ci-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 10.5a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L10.09 15.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <span class="ci-label">Call Us</span>
+              <a href="tel:+919747813273" class="ci-val">97478 13273</a>
+              <a href="tel:+919809204029" class="ci-val">98092 04029</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="ci-label">Email Us</span>
+              <a href="mailto:evoraevents2026@gmail.com" class="ci-val">evoraevents2026@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </div>
+            <div>
+              <span class="ci-label">Follow Us</span>
+              <a href="https://instagram.com/evora_event_hub" target="_blank" class="ci-val">@evora_event_hub</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <span class="ci-label">Service Area</span>
+              <span class="ci-val">All Kerala Service Available</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="E.g. Arjun Nair" required />
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="+91 9876543210" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="you@email.com" />
+          </div>
+          <div class="form-group">
+            <label>Type of Event</label>
+            <select required>
+              <option value="" disabled selected>Select event type</option>
+              <option>Wedding</option>
+              <option>Engagement</option>
+              <option>Birthday Party</option>
+              <option>Corporate Event</option>
+              <option>Stage Show</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Tell Us About Your Dream Event</label>
+            <textarea placeholder="Describe your vision, date, venue, guest count..." rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">
+            <span>Send Enquiry</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✦ Thank you! We'll reach out to you shortly.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+  <img src="images/logo.png" alt="Evora" class="footer-logo-img" />
+  <div class="footer-tagline">Celebrate · Create · Cherish</div>
+</div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com/evora_event_hub" target="_blank" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="mailto:evoraevents2026@gmail.com" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="tel:+919747813273" aria-label="Phone">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 10.5a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L10.09 15.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      © 2026 EVORA Event Hub & Caters. All rights reserved. · All Kerala Service Available.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
